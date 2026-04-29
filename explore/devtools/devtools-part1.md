@@ -2,29 +2,12 @@
 
 Visit https://cse110-sp26.github.io/Lab4_Hosted/ and open Chrome DevTools (F12) > Network tab, then refresh the page to capture all requests.
 
-1. What is the name of the JSON file that was loaded?
-[YOUR ANSWER HERE]
-
-2. What file initiated the download of the JSON file?
-[YOUR ANSWER HERE]
-
-3. What is the file size of the JSON file?
-[YOUR ANSWER HERE]
-
-4. How long did it take to download the JSON file?
-[YOUR ANSWER HERE]
-
-5. What is the User-Agent string for your browser?
-[YOUR ANSWER HERE]
-
-6. What type of server is being used (from the response headers)?
-[YOUR ANSWER HERE]
-
-7. When was the JSON file last modified?
-[YOUR ANSWER HERE]
-
-8. What is the Content-Type of the JSON file?
-[YOUR ANSWER HERE]
-
-9. What is the name of the function that made the request to fetch the JSON file?
-[YOUR ANSWER HERE]
+1. citylots.json
+2. expose.js
+3. 584944 bytes
+4. 1.4ms
+5. Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.4 Safari/605.1.15
+6. GitHub.com
+7. Tue, 21 Apr 2026 05:07:14 GMT
+8. application/json; charset=utf-8
+9. fetchData

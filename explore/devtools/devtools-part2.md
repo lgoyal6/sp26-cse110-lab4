@@ -2,10 +2,6 @@
 
 Visit https://cse110-sp26.github.io/Lab4_Hosted/ and use Chrome DevTools to debug the sum calculator.
 
-1. What was the bug?
-[YOUR ANSWER — Use the Sources tab or Console in Chrome DevTools to identify the bug. The bug is almost certainly that input values are being read as strings and concatenated instead of parsed as numbers. For example, entering 2 and 3 returns "23" instead of 5.]
+1. The bug was that the input values from the HTML form were being read as strings instead of numbers. When you do input.value in JavaScript it always returns a string, so adding two inputs was concatenating them (e.g. "3" + "2" = "32") instead of adding them numerically.
 
-2. How would you fix it?
-[YOUR ANSWER — Wrap the input reads with parseInt() or Number() so that the values are treated as numbers before the addition operation. Screenshot the fix and save it as fix.png.]
-
-Note: Screenshots result-calculateSum.png, result-dataType.png, and fix.png must be added manually to explore/devtools/ after you take them in Chrome DevTools.
+2. The fix is to wrap the input values with Number() when reading them, so Number(input.value) converts the string to a number before the addition is performed.
